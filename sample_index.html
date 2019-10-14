@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Madyson Jones-Slaughter</title>
+		<link rel="stylesheet" type="text/css" href="./sample_index.css">
+	</head>
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a href="#Contact">Contact</a>
+	</div>
+
+<!-- Home -->
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+
+<!-- Video -->
+	<div id="Home">
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="./media/Typing.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Madyson's Portfolio</h1>
+			<p> 
+				<strong>
+					<center>
+						<q>When you don't create things, you become defined by your tastes rather than ability.
+                        <br>Your tastes only narrow and exclude people. 
+                        <br>So create.
+						</q>	
+						<br>-Jonathan Gillette<br>
+						<br>
+                        My name is Madyson and thank you for visiting my portfolio website! 
+                        <br>Below you can read a little bit about my background and experience.<br>
+                        Enjoy! 
+					</center>	
+				</strong>
+			</p> 
+	</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="./media/hello.png" alt="Laptop">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h1>About</h1>
+				<p>I am software development student who has found a new love for coding! I am a creative, and enjoy finding ways that science and art intersect. <br><br>I am currently a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and gaining experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more. <br><br>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+		</div>
+	</div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h1>GitHub</h1>
+				<p>You can view my coding projects on my GitHub profile here:<br>
+				<center><a href="https://github.com/Madysonjs" target="_blank">Check out my projects!</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/Madysonjs" target="_blank"><img src="./media/gitHub.png" alt="GitHub"></a>
+		</div>
+	</div>
+
+<!-- Contact section -->
+	<div class="Row" id="Contact"> 
+		<div class="Column_3"> <!-- Contact image, left column -->
+			<img src="./media/contact.png" alt="Contact_Image">
+		</div>
+	
+		<div class="Column_1"> <!-- Contact form, right "column" -->
+			<h1>Contact</h2> 
+				<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+					<label>Name:</label>
+						<input type="text" placeholder="Full name">
+					<label>Email:</label>
+						<input type="text" id="Email" name="Email" placeholder="Email Address">
+					<label>Message:</label>
+						<input type="text" id="Message" name="Message" placeholder="Message">
+						<input type="submit" value="Submit">
+				</form>
+		</div>
+	</div>
+	
+<!-- Footer section -->
+	<footer>
+		<p>
+			<center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+		</p>
+	</footer>
+
+		</body>
+
+</html>
