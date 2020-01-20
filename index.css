@@ -1,6 +1,7 @@
 /*Affects entire document*/
 html {
 	scroll-behavior: smooth; /*ensures that the page scrolling is smooth*/
+	background-color: #ffffde;
 }
 
 /* Body */
@@ -23,13 +24,13 @@ body.fade-out{
 /* Navbar */
 .Navbar {
 	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-	background-color: rgb(51, 51, 51); /* This colors the navbar black */
+	background-color: #ffb969; /* This colors the navbar black */
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	width: 100%; /* This makes the navbar span the entire width of the page */
 	z-index: 1; /*This ensures other elements don't display over the navbar */
 		position: fixed;
-		-webkit-animation: moveNav 5s; 
+		-webkit-animation: moveNav 5s;
 			animation: moveNav 5s;
 }
 
@@ -69,7 +70,7 @@ body.fade-out{
 
 /* Navbar hover effect */
 .Navbar a:hover {
-	background-color: rgb(208, 222, 240); /*  This defines the background color that will display when you hover over the text on the navbar */
+	background-color: #ffffde; /*  This defines the background color that will display when you hover over the text on the navbar */
 	color: black; /* This defines the font color that will display when you hover over the text on the navbar */
 	font-weight: bold; /* This makes the text on the navbar bold when hovered over */
 	cursor: pointer;
@@ -79,7 +80,7 @@ body.fade-out{
 
 /* Navbar home button */
 .Navbar a.active { /* The active selector styles a link */
-  background-color: rgb(51, 51, 51);  /* This specifies the background color behind the Home button on the navbar */ 
+  background-color: #ffb969  /* This specifies the background color behind the Home button on the navbar */
 }
 
 /*causes the video to zoom out from a zoomed in position upon page load*/
@@ -94,22 +95,24 @@ body.fade-out{
 
 
 /* Video */
-#Typing_Video {
+#mtHood {
 	position: fixed; /* This fixes our video to the page  */
 	right: 0; /* This ensures no space between the edge of the video and the edge of the page */
 	bottom: 0; /* This ensures no space between the edge of the video and the edge of the page */
 	min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+	min-height: 100%;
+	filter: grayscale(0%);
 	z-index: -1;
 	animation: zoominoutsinglefeatured 5s;
 }
 
-/* Text over the video */ 
-.Video_Text { 
-	background: rgb(51, 51, 51); /* This provides a semi-transparent background for the text to sit over */
-	color: whitesmoke; 
+/* Text over the video */
+.Video_Text {
+	background: #ffb969; /* This provides a semi-transparent background for the text to sit over */
+	color: whitesmoke;
 	width: 100%;
-	padding: 20px; /* This adds padding around the text so that the background goes slightly beyond the text */
-	margin-top: 23%;
+	padding: 200px; /* This adds padding around the text so that the background goes slightly beyond the text */
+/*	margin-top: 23%; */
 		position: relative;
 	-webkit-animation: moveNav 4s;
 		animation: movevideoText 4s;
@@ -117,7 +120,7 @@ body.fade-out{
 
 /*Slideshow Styling*/
 #SlideShow_Background {
-	background: rgba(255, 255, 255, .35);/*transparent white background over vieo*/
+	background: #ffffde;/*transparent white background over vieo*/
 }
 
 .mySlides {
@@ -146,7 +149,7 @@ body.fade-out{
 /*Image contained withing slideshow*/
 .Slide_Show_Images{
 	vertical-align: middle;
-	height: auto;
+	height: 550px;
 	box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
 	width: auto;
 }
@@ -238,12 +241,12 @@ body.fade-out{
 }
 
 .Column_1 {
-	float: left;  
+	float: left;
 	width: 50%; /* This ensures one column takes up half the page width */
-	padding: 10px; 
+	padding: 10px;
 	padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
 	height: 430px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
-	background-color: rgb(208, 222, 240); 
+	background-color: #ffb969;
 }
 
 .Column_2 {
@@ -252,8 +255,18 @@ body.fade-out{
 	padding: 10px;
 	padding-top: 1.9%;
 	height: 430px;
-	background-color: lightslategrey ;
+	background-color: #ffb969 ;
 }
+
+.Column_3 {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	padding-top: 1.9%;
+	height: 430px;
+	background-color: #ffffde ;
+}
+
 
 
 .Row:after { /* This inserts something after the content of selected elements */
@@ -266,11 +279,15 @@ body.fade-out{
 h1 {
 	text-transform: uppercase; /* We are capitalizing our headings */
 	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
 	text-align: center;
-	margin-top: 3%; /* We are adding a small margin above the headings */
-	color: #1a1a1a;
+	margin-top: 0%; /* We are adding a small margin above the headings */
+	color: white;
 }
-
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
 
 /* Paragraph elements */
 p {
@@ -280,6 +297,7 @@ p {
 	font-size: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+	color: white
 }
 
 /* Center align elements - this embraces all centered text */
@@ -300,14 +318,15 @@ a {
 /* Quotation elements */
 q {
 	font-style: italic;
+	font-size: 30px
 }
 
 /* Image elements */
 img {
-	filter: grayscale(100%); /* This rids our pictures of 75% of their color */
-    border-radius: 8px; /* This causes our images to have slightly rounded edges */
-    max-width: 100%; 
-    height: 340px; 
+
+  border-radius: 8px; /* This causes our images to have slightly rounded edges */
+  max-width: 100%;
+  height: 340px;
 	margin-left: auto; /* This in combination with margin-right: auto centers our images */
     margin-right: auto;
 	display: block;	/* By specifying block display we can ensure our images are able to be centered */
@@ -321,11 +340,11 @@ center:hover {
 
 
 /* Heading 1 element hover effect */
-h1:hover {
+/*h1:hover {
 	color: black;
 	transition: transform 1s;
 	transform: scale(1.03);
-	font-weight: normal; /* Makes the text no longer bold when hovered over */ 
+	font-weight: normal; /* Makes the text no longer bold when hovered over */
 }
 
 
@@ -363,14 +382,16 @@ h1:hover {
 .form-container {
 	max-width: 49vw;
 	padding: 9px;
-	background-color: white;
+	background-color: #ffffde;
+	font: black;
 }
 
-.form-container input[type=text], .form-container input[type=password]{
+.form-container input[type=text]{
 	width: 100%;
-	margin:.1vw 0 .1vw 0;
+	height: 35px;
+	margin:.5vw 0 .5vw 0;
 	border: none;
-	background: lightsteelblue;
+	background: white;
 	font: black;
 	font-family: Arial, Helvetica, sans-serif;
 	font: 90vw;
@@ -382,7 +403,7 @@ h1:hover {
 	color: black;
 	border-color: black;
 	margin-bottom: 1vh;
-} 
+}
 
 /*Close button*/
 .form-container .cancel {
@@ -424,5 +445,4 @@ button:hover, .form-container .btn:hover{
 /* Footer element */
 footer {
 	padding: 1%;
-	background-color:white;
 }

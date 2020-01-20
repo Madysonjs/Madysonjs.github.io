@@ -11,7 +11,7 @@
 	</head>
 
 <!-- Body -->
-<body class="Background"> 
+<body class="Background">
 <!---Fade in effect-->
 <script>
 	document.body.className += ' fade-out';
@@ -24,7 +24,7 @@
 
 <!-- Navbar -->
 	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
+		<a class="active" href="#Home">Home</a>
 		<a href="#Slideshow">Slideshow</a>
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
@@ -38,32 +38,26 @@
 	<div id="Home">
 		<br> <!-- Breaks inserted to add space between navbar and first heading -->
 		<br>
-
-<!-- Video -->
-		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-			<source src="./media/Typing.mp4" type="video/mp4">
-			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-		</video>
 	</div>
 
-<!-- Video text --> 
-	<div class="Video_Text"> 
-		<h1 style="color:white;">Madyson's Portfolio</h1>
-			<p> 
+<!-- Video text -->
+	<div class="Video_Text">
+		<h1>Madyson's Portfolio</h1>
+		<br>
+			<p>
 				<strong>
 					<center>
 						<q>When you don't create things, you become defined by your tastes rather than ability.
-                        <br>Your tastes only narrow and exclude people. 
-                        <br>So create.
-						</q>	
+              <br>Your tastes only narrow and exclude people.
+              So create.</q>
 						<br>-Jonathan Gillette<br>
-						<br>
-                        My name is Madyson and thank you for visiting my portfolio website! 
+					<!--	<br>
+                        My name is Madyson and thank you for visiting my portfolio website!
                         <br>Below you can read a little bit about my background and experience.<br>
-                        Enjoy! 
-					</center>	
+                        Enjoy!-->
+					</center>
 				</strong>
-			</p> 
+			</p>
 	</div>
 
 <!---Slideshow section-->
@@ -72,28 +66,28 @@
 			<div id="Slideshow_Container">
 
 				<div class="mySlides fade">
-					<div class="Slide_Number">1 / 4</div>
-					<img class="Slide_Show_Images" src="./media/headshot.png" style="width: 100%">
+					<div class="Slide_Number">1 / 5</div>
+					<img class="Slide_Show_Images" src="./media/headshot.jpeg" style="width: 100%">
 						<div class="text">I'm available to assist you on your project!</div>
 				</div>
 				<div class="mySlides fade">
-					<div class="Slide_Number">2 / 4</div>
+					<div class="Slide_Number">2 / 5</div>
 						<img class="Slide_Show_Images" src="./media/HTML_CSS_and_JavaScript.png" style="width:100%">
 						<div class="text">I am trained in: HTML, CSS, JavaScript</div>
 					</div>
-				<!---<div class="mySlides fade">
+				<div class="mySlides fade">
 					<div class="Slide_Number">3 / 5</div>
 						<img class="Slide_Show_Images" src="./media/Python.png" style="width:100%">
 						<div class="text">the popular programming language Python,</div>
-				</div> --->
+				</div>
 				<div class="mySlides fade">
-					<div class="Slide_Number">3 / 4</div>
+					<div class="Slide_Number">4 / 5</div>
 						<img class="Slide_Show_Images" src="./media/SQL_and_Database.png" style="width: 100%">
 						<div class="text">back end development, databases, and SQL</div>
 				</div>
 				<div class="mySlides fade">
-					<div class="Slide_Number">4 / 4</div>
-						<img class="Slide_Show_Images" src="./media/contact.png" style="width:4100%">
+					<div class="Slide_Number">5 / 5</div>
+						<img class="Slide_Show_Images" src="./media/contact.png" style="width:100%">
 						<div class="text">
 							<a onclick="openForm()" href="#Contact" style="color:lightblue;">Contact me now!</a>
 					</div>
@@ -142,36 +136,27 @@
 	</script>
 
 	<!-- About section -->
-	<div class="Row" id="About"> 
-		<div class="Column_2"> <!-- Left column -->
-			<img src="./media/hello.png" alt="Laptop">
-		</div>
-  
-		<div class="Column_1"> <!-- Right column -->
+	<div class="Row" id="About">
+		<div class="Column_2"> <!-- Right column -->
 			<h1>About</h1>
-				<p>I am software development student who has found a new love for coding! I am a creative, and enjoy finding ways that science and art intersect. <br><br>I am currently a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and gaining experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more. <br><br>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+				<p>I am a software developer who has found a new love for coding! I am a creative, and enjoy finding ways that science and art intersect. <br><br>I have recently finished the Python bootcamp at The Tech Academy gaining experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more. <br><br>I look forward to learning more and working with you on your project.
 		</div>
-	</div>
-
-<!-- GitHub section -->
-	<div class="Row" id="GitHub">
-		<div class="Column_1"> <!-- Left column -->
+		<div class="Column_1" id="GitHub"> <!-- Left column -->
 			<h1>GitHub</h1>
 				<p>You can view my coding projects on my GitHub profile in the link below. I have projects using HTML, CSS, Java, and SQL.<br>
 				<center><a href="https://github.com/Madysonjs" target="_blank">Check out my latest projects!</a></center></p>
 		</div>
-		
-		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/Madysonjs" target="_blank"><img src="./media/github.png" alt="GitHub"></a>
-		</div>
+
 	</div>
-</div>	
+
+
+</div>
 <!---Contact Form-->
 	<div id="Contact">
 		<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
 		<div class="form-popup" id="myForm">
 			<form action="https://formspree.io/madysonjs@gmail.com" method="POST" class="form-container"> <!---Using a free online service to sent our contact form to an email address of our choosing-->
-			<h1>CONTACT</h1>
+			<h2>CONTACT</h2>
 				<label for="name"><b>Name</b></label>
 					<input type="text" placeholder="Type your name here" name="name" required>
 				<label for="phone"><b>Phone</b></label>
@@ -180,7 +165,7 @@
 					<input type="text" placeholder="Type your email here" name="email" required>
 				<label for="message"><b>Message</b></label>
 					<input type="text" placeholder="Type your message here" name="message" required>
-	
+
 		<button type="submit" class="btn">SUBMIT</button>
 		<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
 			</form>
